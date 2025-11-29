@@ -1,9 +1,10 @@
 import { Margin } from '@mui/icons-material'
 import { Box,Button,Paper,TextField,Typography } from '@mui/material'
 import axios from 'axios'
-import React, { useEffect, useState,useNavigate } from 'react'
+import React, { useEffect, useState } from 'react'
 import { UserContext } from '../../../ContextProvider';
 import { useContext } from 'react';
+import {useNavigate} from 'react-router-dom'
 
 
 export default function ManageUser() {
