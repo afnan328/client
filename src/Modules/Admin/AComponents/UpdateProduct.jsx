@@ -7,9 +7,10 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import CloudUploadIcon from '@mui/icons-material/CloudUpload';
 import { styled } from '@mui/system';
-import { Link, useNavigate, useParams } from 'react-router-dom';
+import { Link,  useParams } from 'react-router-dom';
 import { UserContext } from '../../../ContextProvider';
 import { useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const VisuallyHiddenInput = styled('input')({
   position: 'absolute',
@@ -20,7 +21,7 @@ export default function Updateproduct() {
 
   const {host}=useContext(UserContext);
   
-  const nav =useNavigate();
+ 
 
   const { pid } = useParams();
   const navigate = useNavigate();
